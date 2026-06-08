@@ -217,24 +217,48 @@
   if (replayBtn) replayBtn.addEventListener('click', burst);
 
   /* =========================================================
-     MUSIC TOGGLE
+     MUSIC — starts on first user gesture (browsers block silent
+     autoplay before any interaction). The ♪ button toggles after.
      ========================================================= */
   var song = document.getElementById('song');
   var soundBtn = document.getElementById('soundBtn');
   var soundOn = false;
+
+  function setBtnOn () { if (soundBtn) { soundBtn.textContent = '♫'; soundBtn.style.color = 'var(--rose-deep)'; } }
+  function setBtnOff () { if (soundBtn) { soundBtn.textContent = '♪'; soundBtn.style.color = ''; } }
+
+  if (song) {
+    song.volume = 0.5;
+    // try autoplay first — works for returning visitors with media-engagement,
+    // otherwise will be blocked and we fall back to first-gesture start.
+    var attempt = song.play();
+    if (attempt && attempt.then) {
+      attempt.then(function () { soundOn = true; setBtnOn(); }).catch(function () {
+        function startOnce () {
+          if (soundOn) return;
+          try { song.currentTime = 0; } catch (e) {}
+          var pr = song.play();
+          if (pr && pr.then) pr.then(function () { soundOn = true; setBtnOn(); }).catch(function () {});
+          else { soundOn = true; setBtnOn(); }
+        }
+        ['click', 'touchstart', 'keydown'].forEach(function (evt) {
+          document.addEventListener(evt, startOnce, { once: true, capture: true });
+        });
+      });
+    }
+  }
+
   if (soundBtn && song) {
-    soundBtn.addEventListener('click', function () {
+    soundBtn.addEventListener('click', function (e) {
+      e.stopPropagation(); // don't double-fire the first-gesture starter
       soundOn = !soundOn;
       if (soundOn) {
-        song.volume = 0.5;
         var pr = song.play();
         if (pr && pr.catch) pr.catch(function () {});
-        soundBtn.textContent = '♫';
-        soundBtn.style.color = 'var(--rose-deep)';
+        setBtnOn();
       } else {
         song.pause();
-        soundBtn.textContent = '♪';
-        soundBtn.style.color = '';
+        setBtnOff();
       }
     });
   }
