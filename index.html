@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AG, will you marry AG?</title>
+<meta name="description" content="For Akansha — a little scrapbook, made by Aditya.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ambient petals + confetti layers -->
+<div id="petals" aria-hidden="true"></div>
+<div id="confetti" aria-hidden="true"></div>
+
+<!-- ============ THE BOOK ============ -->
+<div class="book" id="book">
+
+  <!-- 0 · COVER -->
+  <section class="page page--cream in" data-chapter="open me">
+    <div class="sheet cover">
+      <div class="cover-photo polaroid" data-reveal style="--d:.05s">
+        <span class="tape tape--rose" style="top:-14px;left:50%;transform:translateX(-50%) rotate(-3deg);width:90px"></span>
+        <div class="frame">
+          <img src="photos/cover.jpg" alt="" onerror="this.classList.add('missing')">
+          <span class="ph-label"><span>drop: your favourite photo of us</span></span>
+        </div>
+        <p class="caption">us.</p>
+      </div>
+      <p class="crest" data-reveal style="--d:.15s">A · G &nbsp;✦&nbsp; A · G</p>
+      <h1 class="display" data-reveal style="--d:.25s">Adisha</h1>
+      <p class="open-line" data-reveal style="--d:.4s">Akansha — sit with me for a minute.<br>I made you a little book.</p>
+      <button class="btn-yes" style="font-size:1.1rem;padding:.6em 1.8em" data-next data-reveal>Open it &rsaquo;</button>
+    </div>
+  </section>
+
+  <!-- 1 · HOW WE MET -->
+  <section class="page page--kraft" data-chapter="how it started">
+    <div class="sheet spread">
+      <div class="col-text">
+        <p class="kicker" data-reveal>Chapter one</p>
+        <h2 class="title" data-reveal style="--d:.1s">We were<br><em>only friends</em></h2>
+        <p class="lede" data-reveal style="--d:.2s">
+          We met in college — the easy kind of friends, the kind you don't notice
+          you're falling for. Then came prom night, and I asked you to come with me.
+        </p>
+        <p class="lede" data-reveal style="--d:.3s">
+          <span class="soft">You couldn't — your parents, the careful kind. But you got the hint.
+          And that was enough. What followed were chats past midnight, calls that didn't want
+          to end, and weekends we stole just to be near each other.</span>
+        </p>
+        <div class="note" data-reveal style="--d:.45s;transform:rotate(-1.5deg);max-width:440px">
+          <span class="num">no. 01</span>
+          <p class="hand">vo insaan hi kya jiski unginat binsoyi raate na ho…<br>
+          vo pyaar hi kya jisme bin ruki baate na ho…</p>
+          <span class="whisper">— what is a person, without a thousand sleepless nights; what is love, without talk that never pauses.</span>
+        </div>
+      </div>
+      <div class="col-media">
+        <div class="media-stack" data-reveal style="--d:.25s">
+          <div class="polaroid back" style="--rot:-6deg;transform:rotate(-6deg)">
+            <div class="frame"><img src="photos/met-1.jpg" alt="" onerror="this.classList.add('missing')"><span class="ph-label"><span>early days</span></span></div>
+          </div>
+          <div class="polaroid front" style="transform:rotate(3deg)">
+            <span class="tape tape--gold" style="top:-13px;left:24px;transform:rotate(-8deg)"></span>
+            <div class="frame"><img src="photos/met-2.jpg" alt="" onerror="this.classList.add('missing')"><span class="ph-label"><span>us, just friends</span></span></div>
+            <p class="caption">before we knew.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 · NOVEMBER 17 -->
+  <section class="page page--deep" data-chapter="november 17">
+    <div class="sheet spread flip">
+      <div class="col-text">
+        <p class="kicker" data-reveal>Chapter two · 17 · 11</p>
+        <h2 class="title" data-reveal style="--d:.1s"><em>November 17</em></h2>
+        <p class="lede" data-reveal style="--d:.2s">
+          The day we stopped pretending we were only friends. The day we began.
+          Every year since, this date has belonged to us — and only us.
+        </p>
+        <div class="note" data-reveal style="--d:.4s;transform:rotate(1.6deg);max-width:440px">
+          <span class="num">no. 11</span>
+          <p class="hand">Adisha, ye ek kaisa zindagi ka mod,<br>
+          ham saath to kare har cheez ko sort…<br>
+          aks Babu, me kabhi nai jaaunga aapko chhodh.</p>
+          <span class="whisper">— what a turn this life has taken; together we sort every little thing; my Aks, I will never, ever leave you.</span>
+        </div>
+      </div>
+      <div class="col-media">
+        <div class="media-stack" data-reveal style="--d:.25s">
+          <div class="snap" style="transform:rotate(-3deg);width:min(360px,80%)">
+            <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+            <div class="frame"><img src="photos/nov17.jpg" alt="" onerror="this.classList.add('missing')"><span class="ph-label"><span>the day we began</span></span></div>
+          </div>
+          <p class="hand" style="text-align:center;margin-top:14px;color:var(--rose-deep)">where it all started ✦</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 · BANGALORE -->
+  <section class="page page--cream" data-chapter="bangalore">
+    <div class="sheet spread">
+      <div class="col-text">
+        <p class="kicker" data-reveal>Chapter three · Nov 2023</p>
+        <h2 class="title" data-reveal style="--d:.1s">Bangalore,<br><em>24 × 7</em></h2>
+        <p class="lede" data-reveal style="--d:.2s">
+          Our first anniversary spent together — two whole years. In Bangalore, we finally
+          got the thing we'd manifested out loud so many times: being around each other,
+          all day, every day. No goodbyes at the gate. Just us, and a home that was ours.
+        </p>
+        <div class="note" data-reveal style="--d:.4s;transform:rotate(-1.4deg);max-width:440px">
+          <span class="num">no. 03</span>
+          <p class="hand">Aap mere jeevan ka sabse keemti hissa ho…<br>
+          what I just want is — together it's just our home we goooo!</p>
+          <span class="whisper">— you are the most precious part of my life; all I want is for us to walk home, together.</span>
+        </div>
+      </div>
+      <div class="col-media">
+        <div class="media-stack" data-reveal style="--d:.25s">
+          <div class="polaroid back" style="transform:rotate(5deg)">
+            <div class="frame"><img src="photos/bangalore-2.jpg" alt="" onerror="this.classList.add('missing')"><span class="ph-label"><span>our city</span></span></div>
+          </div>
+          <div class="polaroid front" style="transform:rotate(-3deg)">
+            <span class="tape tape--sage" style="top:-13px;right:24px;transform:rotate(7deg)"></span>
+            <div class="frame"><img src="photos/bangalore-1.jpg" alt="" onerror="this.classList.add('missing')"><span class="ph-label"><span>home, together</span></span></div>
+            <p class="caption">manifested.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 · FIELD GUIDE TO AKANSHA -->
+  <section class="page page--kraft" data-chapter="my favourite person">
+    <div class="sheet">
+      <div class="guide">
+        <span class="stamp" data-reveal>field notes · handle with love</span>
+        <h2 class="title" data-reveal style="--d:.1s">A field guide to<br><em>Akansha</em></h2>
+        <div class="note" data-reveal style="--d:.25s;transform:rotate(-1deg);max-width:600px">
+          <span class="num">no. 22</span>
+          <p class="hand">Akansha aur unke vibhinn mood —<br>
+          if you ain't acquainted then all the best, dude.<br>
+          She may get rude, super rude…<br>
+          what you don't know is — she's the irreplaceable one, dude.</p>
+          <span class="whisper">— a complete guide to her many moods: good luck. the secret? she is one of one.</span>
+        </div>
+        <p class="hand" data-reveal style="--d:.4s;color:var(--rose-deep)">shoni bandar — every single mood of yours, I'd choose again. 🐒</p>
+        <div class="snap" data-reveal style="--d:.5s;width:min(240px,60%);transform:rotate(2.5deg)">
+          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+          <div class="frame"><img src="photos/her-1.jpg" alt="" onerror="this.classList.add('missing')"><span class="ph-label"><span>a candid of her</span></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 · SMILEYS FOR RHYMEES -->
+  <section class="page page--deep" data-chapter="smileys for rhymees">
+    <div class="sheet">
+      <div style="text-align:center;margin-bottom:clamp(18px,3vh,34px)">
+        <p class="kicker" data-reveal>Chapter five · from the notebook</p>
+        <h2 class="title" data-reveal style="--d:.1s">Smileys for <em>Rhymees</em></h2>
+        <p class="whisper" data-reveal style="--d:.2s">a few of the things I've scribbled about you, over the years.</p>
+      </div>
+      <div class="notes-wall">
+        <div class="note" data-reveal style="--d:.2s">
+          <span class="num">no. 24</span>
+          <p class="hand">You n me… didn't ever think this is how love will be — you're the love of my life, wiffey. My bumble bee.</p>
+        </div>
+        <div class="note" data-reveal style="--d:.3s">
+          <span class="num">no. 31</span>
+          <p class="hand">My wiffeeyy, my liffeeyy, her cheeks soo milky, her hair soo silky… there's nothing I want on that face other than a smileyy.</p>
+        </div>
+        <div class="note" data-reveal style="--d:.4s">
+          <span class="num">no. 34</span>
+          <p class="hand">My lady love, my honey dove, my fuel for the life stove — you're my lifeline, my love.</p>
+        </div>
+        <div class="note" data-reveal style="--d:.5s">
+          <span class="num">no. 30</span>
+          <p class="hand">My best pass time is making a collage for you. My life is about holding Adisha in place — how much it is, that I love you.</p>
+        </div>
+        <div class="note" data-reveal style="--d:.6s">
+          <span class="num">no. 27</span>
+          <p class="hand">Doing things with you feels complete — you're that part of me I can never afford to delete.</p>
+        </div>
+        <div class="note" data-reveal style="--d:.7s">
+          <span class="num">no. 35</span>
+          <p class="hand">My everything in short, my constant in short — Adisha, our life support.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 · ADISHA (the name) -->
+  <section class="page page--cream" data-chapter="our name">
+    <div class="sheet">
+      <div class="namecard">
+        <p class="kicker" data-reveal>Chapter six · the word that's only ours</p>
+        <div class="equation" data-reveal style="--d:.1s">
+          <span class="nm">Aditya</span><span class="op">+</span><span class="nm">Akansha</span>
+        </div>
+        <div class="equation" data-reveal style="--d:.25s">
+          <span class="op" style="font-size:1.4rem">=</span><span class="res">Adisha</span>
+        </div>
+        <div class="note" data-reveal style="--d:.4s;transform:rotate(-1.2deg);max-width:560px">
+          <span class="num">no. 25</span>
+          <p class="hand">Aditya and Akansha = Adisha.<br>
+          aap paas aaye to bas me to chipak sa gaya…<br>
+          Akansha, I swear to god, me zindagi bita dunga aapke saath.</p>
+          <span class="whisper">— the moment you came close, I simply stuck to you; I swear, I will spend my whole life by your side.</span>
+        </div>
+        <p class="hand" data-reveal style="--d:.55s;color:var(--rose-deep);font-size:clamp(1.6rem,1rem+2vw,2.4rem)">one name. one us.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 · US (collage) -->
+  <section class="page page--kraft" data-chapter="us">
+    <div class="sheet" style="display:grid;place-items:center">
+      <p class="kicker" data-reveal style="margin-bottom:18px">Chapter seven · a wall of us</p>
+      <div class="collage">
+        <div class="snap span3" data-reveal style="--d:.05s"><span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span><div class="frame" style="aspect-ratio:16/9"><img src="photos/us-1.jpg" alt="" onerror="this.classList.add('missing')"><span class="ph-label"><span>us-1.jpg</span></span></div></div>
+        <div class="polaroid span3" data-reveal style="--d:.1s"><span class="tape tape--rose" style="top:-12px;left:30px;transform:rotate(-6deg)"></span><div class="frame" style="aspect-ratio:16/9"><img src="photos/us-2.jpg" alt="" onerror="this.classList.add('missing')"><span class="ph-label"><span>us-2.jpg</span></span></div><p class="caption">always.</p></div>
+        <div class="snap" data-reveal style="--d:.15s"><span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span><div class="frame"><img src="photos/us-3.jpg" alt="" onerror="this.classList.add('missing')"><span class="ph-label"><span>us-3.jpg</span></span></div></div>
+        <div class="snap" data-reveal style="--d:.2s"><span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span><div class="frame"><img src="photos/us-4.jpg" alt="" onerror="this.classList.add('missing')"><span class="ph-label"><span>us-4.jpg</span></span></div></div>
+        <div class="snap" data-reveal style="--d:.25s"><span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span><div class="frame"><img src="photos/us-5.jpg" alt="" onerror="this.classList.add('missing')"><span class="ph-label"><span>us-5.jpg</span></span></div></div>
+        <div class="polaroid" data-reveal style="--d:.3s"><span class="tape tape--dusty" style="top:-12px;left:50%;transform:translateX(-50%) rotate(4deg)"></span><div class="frame"><img src="photos/us-6.jpg" alt="" onerror="this.classList.add('missing')"><span class="ph-label"><span>us-6.jpg</span></span></div><p class="caption">my favourite.</p></div>
+        <div class="snap" data-reveal style="--d:.35s"><span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span><div class="frame"><img src="photos/us-7.jpg" alt="" onerror="this.classList.add('missing')"><span class="ph-label"><span>us-7.jpg</span></span></div></div>
+        <div class="snap" data-reveal style="--d:.4s"><span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span><div class="frame"><img src="photos/us-8.jpg" alt="" onerror="this.classList.add('missing')"><span class="ph-label"><span>us-8.jpg</span></span></div></div>
+        <div class="snap" data-reveal style="--d:.45s"><span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span><div class="frame"><img src="photos/us-9.jpg" alt="" onerror="this.classList.add('missing')"><span class="ph-label"><span>us-9.jpg</span></span></div></div>
+      </div>
+      <p class="collage-cap" data-reveal style="--d:.5s">my best pass time —<br>making a collage for you.</p>
+    </div>
+  </section>
+
+  <!-- 8 · THE QUESTION -->
+  <section class="page page--deep" id="proposal" data-chapter="the question">
+    <div class="sheet">
+      <div class="question propose">
+        <p class="kicker" data-reveal>Chapter eight · the only question that matters</p>
+        <div class="note" data-reveal style="--d:.1s;transform:rotate(-1.2deg);max-width:520px">
+          <span class="num">no. 17</span>
+          <p class="hand">Aap saath mere chal paaoge kya?<br>
+          in dino me bhi muskurana hoga, iss rishte ko nibhana hoga…<br>
+          mere saath reh paaoge kya?</p>
+          <span class="whisper">— will you walk beside me? through every season, smiling, holding this together… will you stay with me?</span>
+        </div>
+        <h2 class="title ask" data-reveal style="--d:.25s">Akansha Gautam,<br><em>will you marry me?</em></h2>
+        <p class="whisper" data-reveal style="--d:.35s">no. 15 — mere iss pyaar ka taufa qubool kijiye. <em>accept this gift of my love.</em></p>
+        <button class="btn-yes" id="yesBtn" data-reveal style="--d:.45s">Yes &nbsp;♥</button>
+        <p class="eyebrow" data-reveal style="--d:.55s">(there was never any other button.)</p>
+      </div>
+
+      <div class="answered propose">
+        <p class="said-yes-mark">she said yes.</p>
+        <div class="divider"><span class="heart">♥</span></div>
+        <p class="lede" style="max-width:30ch;text-align:center">Forever starts now — on our seventeenth, every year, for the rest of our lives.</p>
+        <p class="hand" style="color:var(--rose-deep);font-size:clamp(1.8rem,1rem+2.5vw,3rem)">Adisha. our life support.</p>
+        <p class="sig">— always yours, Aditya</p>
+        <button class="nav-btn" id="replayBtn" title="again" style="width:auto;padding:8px 18px;border:1px solid rgba(176,106,94,.35);border-radius:999px;font-family:var(--type);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;background:rgba(255,250,238,.6)">replay the petals</button>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /.book -->
+
+<!-- ============ NAV CHROME ============ -->
+<div class="zone left" data-prev aria-label="previous page"></div>
+<div class="zone right" data-next aria-label="next page"></div>
+
+<div class="bookmark" id="bookmark">
+  <div class="ribbon" id="ribbonNum">01</div>
+  <div class="ch-name" id="chName">open me</div>
+</div>
+
+<button class="sound" id="soundBtn" title="play music" aria-label="toggle music">♪</button>
+
+<nav class="nav" aria-label="page navigation">
+  <button class="nav-btn" id="prevBtn" data-prev aria-label="previous">&lsaquo;</button>
+  <div class="dots" id="dots"></div>
+  <button class="nav-btn" id="nextBtn" data-next aria-label="next">&rsaquo;</button>
+</nav>
+
+<div class="turn-hint" id="turnHint"><span>turn the page</span><span class="arrow">&rsaquo;</span></div>
+
+<!-- optional music: drop an mp3 at music/song.mp3 -->
+<audio id="song" loop preload="none"><source src="music/song.mp3" type="audio/mpeg"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
